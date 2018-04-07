@@ -1,0 +1,41 @@
+*quickfixtoggle.txt*                                    Quickfix toggle
+
+==============================================================================
+Contents                                                *a1-quickfixtoggle*
+
+    1. Intro .................................... |a1-quickfixtoggle-intro|
+    2. Commands ................................. |a1-quickfixtoggle-commands|
+    3. Key bindings ............................. |a1-quickfixtoggle-binding|
+
+==============================================================================
+1. Intro                                          *a1-quickfixtoggle-intro*
+
+Plugin open and close quickfix (local list) window at the botom of screen.
+Opening quickfix window with plugin allows only one window at the time.
+
+==============================================================================
+2. Commands                                    *a1-quickfixtoggle-commands*
+
+List of defined Vim commands.
+
+                                                                 *:Ltoggle*
+:Ltoggle            Opens lolaclist window (see :lopen) or switch focus to it
+                    if already opened. Closes locallist window if it's in focus.
+
+:Ltoggle!           Opens locallist window or closes it if already opened.
+
+                                                                 *:Ctoggle*
+:Ctoggle            Opens quickfix window (see :lopen) or switch focus to it
+                    if already opened. Closes quickfix window if it's in focus.
+
+:Ctoggle!           Opens quickfix window or closes it if already opened.
+
+==============================================================================
+3. Key bindings                                 *a1-quickfixtoggle-binding*
+
+The vim-quickfixtoggle provides the following options for key bindings:
+
+<Plug>(a1black#quickfixtoggle#ll)
+                    Toggle locallist window.
+<Plug>(a1black#quickfixtoggle#qf)
+                    Toggle quickfix window.
