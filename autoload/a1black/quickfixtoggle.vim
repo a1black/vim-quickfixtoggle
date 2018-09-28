@@ -58,6 +58,9 @@ function! s:Focus_quickfix_on_error(prefix, winid, line, col)
             let l:line_err = l:line_count
         endif
     endfor
+    if l:line_count ==# 0
+        call s:Close_quickfix_buf(-1)
+    endif
 
     return l:line_err
 endfunction
